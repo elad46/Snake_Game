@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enhanced Snake Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="homeScreen" class="container noselect">
+      <div class="wrapper">
+        <button id="startGame">
+          <i class="fas fa-play"></i>
+          התחל משחק
+        </button>
+        <div id="highScore">שיא: <span id="highScoreValue">0</span></div>
+      </div>
+    </div>
+    <div id="gameScreen" class="container noselect" style="display: none">
+      <div class="wrapper">
+        <button id="replay">
+          <i class="fas fa-redo"></i>
+          שחק שוב
+        </button>
+        <canvas id="gameCanvas"></canvas>
+        <div id="ui">
+          <h2>נקודות</h2>
+          <span id="score">0</span>
+        </div>
+        <div id="author">
+          <h1>נחש</h1>
+        </div>
+      </div>
+    </div>
+    <div class="controls">
+      <label for="speed">מהירות:</label>
+      <input
+        type="range"
+        id="speed"
+        min="200"
+        max="1000"
+        step="50"
+        value="250"
+      />
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
