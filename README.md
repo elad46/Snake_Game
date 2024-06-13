@@ -1,2 +1,2 @@
 # Snake_Game
-Nostalgic snake game
+building the nostalgic snake game 👷🏻‍♂️🛠️🚧
